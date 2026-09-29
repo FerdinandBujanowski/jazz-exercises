@@ -10,11 +10,22 @@ var last_chord : Chord
 var chord_similarity : int = 2
 var allow_same_root : bool = false
 
+var save_to_file : bool = true
+var file_name : String
+var start_ticks : int = 0
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	if save_to_file:
+		file_name = Time.get_datetime_string_from_system(true, true).replace(":","-") + ".tsv"
+		print("Saving exercise to file " + file_name)
+		var file = FileAccess.open("user://" + file_name, FileAccess.WRITE)
+		file.store_csv_line(["chord","notes","time"], "\t")
 	new_chord()
 
 func new_chord() -> void:
+	start_ticks = Time.get_ticks_msec()
+	
 	if selected_chord == null:
 		selected_chord = NoteFactory.chords.pick_random()
 		
@@ -47,6 +58,12 @@ func new_chord() -> void:
 	chord_text.text = selected_chord.get_font_string(true, true)
 
 func _on_full_chord_played() -> void:
+	# get passed time and save to file
+	var passed_ticks : int = Time.get_ticks_msec() - start_ticks
+	var file = FileAccess.open("user://" + file_name, FileAccess.READ_WRITE)
+	file.seek_end()
+	file.store_csv_line([str(selected_chord),str(MidiHandler.note_ensemble),str(passed_ticks/1000.)], "\t")
+	
 	# disconnect signals from old chord
 	MidiHandler.note_ensemble_changed.disconnect(selected_chord._check_all_played)
 	selected_chord.full_chord_played.disconnect(_on_full_chord_played)
