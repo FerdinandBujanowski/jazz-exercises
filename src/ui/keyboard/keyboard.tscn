@@ -1,0 +1,205 @@
+[gd_scene format=3 uid="uid://f3bphmvu0ph0"]
+
+[ext_resource type="PackedScene" uid="uid://2ghic10m1kbb" path="res://src/ui/keyboard/key.tscn" id="1_5yts2"]
+[ext_resource type="Script" uid="uid://cib6swvyns25e" path="res://src/ui/keyboard/keyboard.gd" id="1_cr7pf"]
+
+[node name="Keyboard" type="Control" unique_id=1893401652]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -448.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_cr7pf")
+
+[node name="Keys" type="HBoxContainer" parent="." unique_id=1457579047]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -560.0
+offset_top = -100.0
+offset_right = 560.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+
+[node name="Key1" parent="Keys" unique_id=871103672 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+
+[node name="Key2" parent="Keys" unique_id=498051853 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+black = true
+
+[node name="Key3" parent="Keys" unique_id=1802446528 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+
+[node name="Key4" parent="Keys" unique_id=1309463331 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+black = true
+
+[node name="Key5" parent="Keys" unique_id=1627278454 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+
+[node name="Key6" parent="Keys" unique_id=447880214 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+
+[node name="Key7" parent="Keys" unique_id=1153461728 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+black = true
+
+[node name="Key8" parent="Keys" unique_id=2016867687 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+
+[node name="Key9" parent="Keys" unique_id=1258084013 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+black = true
+
+[node name="Key10" parent="Keys" unique_id=2056188627 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+
+[node name="Key11" parent="Keys" unique_id=1189048496 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+black = true
+
+[node name="Key12" parent="Keys" unique_id=1045569795 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+
+[node name="Key13" parent="Keys" unique_id=909687300 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+
+[node name="Key14" parent="Keys" unique_id=711557663 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+black = true
+
+[node name="Key15" parent="Keys" unique_id=107254889 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+
+[node name="Key16" parent="Keys" unique_id=1105388396 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+black = true
+
+[node name="Key17" parent="Keys" unique_id=1694295336 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+
+[node name="Key18" parent="Keys" unique_id=70462107 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+
+[node name="Key19" parent="Keys" unique_id=315712679 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+black = true
+
+[node name="Key20" parent="Keys" unique_id=651007883 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+
+[node name="Key21" parent="Keys" unique_id=2053257351 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+black = true
+
+[node name="Key22" parent="Keys" unique_id=1384366329 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+
+[node name="Key23" parent="Keys" unique_id=1338269038 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+black = true
+
+[node name="Key24" parent="Keys" unique_id=2084013044 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+
+[node name="Key25" parent="Keys" unique_id=634422961 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+
+[node name="Key26" parent="Keys" unique_id=1150030768 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+black = true
+
+[node name="Key27" parent="Keys" unique_id=125391327 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+
+[node name="Key28" parent="Keys" unique_id=1902254079 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+black = true
+
+[node name="Key29" parent="Keys" unique_id=1378392650 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+
+[node name="Key30" parent="Keys" unique_id=902598055 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+
+[node name="Key31" parent="Keys" unique_id=1337997069 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+black = true
+
+[node name="Key32" parent="Keys" unique_id=722371923 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+
+[node name="Key33" parent="Keys" unique_id=863211969 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+black = true
+
+[node name="Key34" parent="Keys" unique_id=672505154 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+
+[node name="Key35" parent="Keys" unique_id=2085061847 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+black = true
+
+[node name="Key36" parent="Keys" unique_id=2007355548 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+
+[node name="Key37" parent="Keys" unique_id=626853643 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+
+[node name="Key38" parent="Keys" unique_id=563615395 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+black = true
+
+[node name="Key39" parent="Keys" unique_id=1605711239 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+
+[node name="Key40" parent="Keys" unique_id=708476397 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+black = true
+
+[node name="Key41" parent="Keys" unique_id=703198729 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+
+[node name="Key42" parent="Keys" unique_id=1713742555 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+
+[node name="Key43" parent="Keys" unique_id=788059517 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+black = true
+
+[node name="Key44" parent="Keys" unique_id=1569779537 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+
+[node name="Key45" parent="Keys" unique_id=1992642484 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+black = true
+
+[node name="Key46" parent="Keys" unique_id=1158391399 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+
+[node name="Key47" parent="Keys" unique_id=1477072878 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+black = true
+
+[node name="Key48" parent="Keys" unique_id=434157471 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+
+[node name="Key49" parent="Keys" unique_id=2109293949 instance=ExtResource("1_5yts2")]
+layout_mode = 2
+
+[node name="BlackKeys" type="Control" parent="." unique_id=722900955]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2

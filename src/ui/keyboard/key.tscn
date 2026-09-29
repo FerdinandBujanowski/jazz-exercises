@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://2ghic10m1kbb"]
+
+[ext_resource type="Script" uid="uid://cvtk4bmllxew4" path="res://src/ui/keyboard/key.gd" id="1_3fhko"]
+[ext_resource type="StyleBox" uid="uid://bso3wl2u52pqs" path="res://src/resources/themes/white_key.tres" id="1_kxcw3"]
+
+[node name="Key" type="Control" unique_id=902598055]
+custom_minimum_size = Vector2(40, 200)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 200.0
+script = ExtResource("1_3fhko")
+
+[node name="Panel" type="Panel" parent="." unique_id=26797825]
+layout_mode = 1
+offset_right = 40.0
+offset_bottom = 200.0
+theme_override_styles/panel = ExtResource("1_kxcw3")

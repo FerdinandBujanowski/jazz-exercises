@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="ChordType" format=3 uid="uid://b5e13oksjajvu"]
+
+[ext_resource type="Script" uid="uid://db8ipfaueej20" path="res://src/theory/chord_type.gd" id="1_yk64j"]
+
+[resource]
+script = ExtResource("1_yk64j")
+notes = Array[int]([0, 4, 7, 11])
+name = "maj7"
+metadata/_custom_type_script = "uid://db8ipfaueej20"

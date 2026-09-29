@@ -1,0 +1,45 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Jazz Exercises"
+run/main_scene="uid://domt5ls3kk8m3"
+config/features=PackedStringArray("4.7", "Forward Plus")
+config/icon="res://icon.svg"
+
+[autoload]
+
+SymbolDict="*uid://c230bjg03adtq"
+NoteFactory="*uid://cvgwkhqnuwimv"
+MidiHandler="*uid://iqlu368b12dr"
+
+[display]
+
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[dotnet]
+
+project/assembly_name="Jazz Exercises"
+
+[file_customization]
+
+folder_colors={
+"res://src/resources/": "pink"
+}
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"
