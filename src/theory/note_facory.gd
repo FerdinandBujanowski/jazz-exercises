@@ -66,14 +66,48 @@ func _ready() -> void:
 		print("- " + str(chord))
 	print("\n")
 	
+func get_new_chord(
+	last_chord : Chord,
+	exclude : Array[Chord], 
+	possible_roots : Array[int],
+	possible_types : Array[ChordType],
+	_min_dissimilarity : int, # TODO
+	_max_dissimilarity : int # TODO
+	# TODO include other criteria
+) -> Chord:
+	var options : Array[Chord] = []
+	
+	for current_chord : Chord in chords:
+		var possible : bool = true
 		
+		if current_chord != null and current_chord.equals(last_chord):
+			possible = false
+			
+		if current_chord in exclude:
+			possible = false
+			
+		if current_chord.root not in possible_roots:
+			possible = false
+			
+		if current_chord.type not in possible_types:
+			possible = false
+			
+		# TODO dissimilarity as well as overlaps
+		
+		if possible:
+			options.append(current_chord)
+			
+	if options.size() == 0:
+		return chords[0]
+	return options.pick_random()
+	
 func get_note_string(key:int, sharp:bool=true, flat:bool=false):
 	if key < 0 or (!sharp and !flat):
 		return notes[0][0]
 		
 	var note_options : Array = notes[key]
 	
-	if len(note_options) == 1 or (flat and !sharp):
+	if len(note_options) == 1 or (sharp and !flat):
 		return note_options[0]
 		
 	if sharp and flat:

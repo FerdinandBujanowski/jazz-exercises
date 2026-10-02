@@ -48,5 +48,17 @@ func _check_all_played(exclusive : bool = true) -> void:
 	if rooted_notes.size() == 0:
 		full_chord_played.emit()
 		
+func get_dissimilarity() -> int:
+	return 0
+		
 func equals(other : Chord) -> bool:
-	return other.type.notes == type.notes and other.root == root
+	if other == null:
+		return false
+		
+	if other.type.notes.size() != type.notes.size():
+		return false
+	for note : int in other.type.notes:
+		if note not in type.notes:
+			return false
+			
+	return other.root == root

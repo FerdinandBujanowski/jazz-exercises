@@ -20,8 +20,11 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = 1153.0
+offset_bottom = 647.0
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(0.5, 0.5)
 texture = ExtResource("3_fkh2t")
 patch_margin_left = 130
 patch_margin_top = 130
@@ -50,10 +53,8 @@ vertical_alignment = 1
 
 [node name="ChordExercise" parent="UI Root" unique_id=2100820000 instance=ExtResource("4_834u0")]
 layout_mode = 1
-offset_left = 69.50073
-offset_top = 39.0
-offset_right = -69.50073
-offset_bottom = -39.0
+offset_left = -0.00012207031
+offset_right = 0.00012207031
 
 [node name="Keyboard" parent="." unique_id=1893401652 instance=ExtResource("4_dy74i")]
 anchors_preset = 7
